@@ -1,0 +1,92 @@
+.container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  
+    mat-card {
+      width: 100%;
+      max-width: 700px;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      background-color: #ffffff;
+  
+      mat-card-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #333;
+  
+        mat-icon {
+          font-size: 24px;
+          color: #1976d2;
+        }
+      }
+  
+      mat-card-content {
+        margin-top: 1rem;
+  
+        p {
+          font-size: 1rem;
+          color: #555;
+          line-height: 1.6;
+        }
+      }
+  
+      mat-accordion {
+        margin-top: 1.5rem;
+  
+        mat-expansion-panel {
+          border-radius: 8px;
+          margin-bottom: 1rem;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  
+          mat-expansion-panel-header {
+            background-color: #f7f7f7;
+            font-weight: bold;
+            color: #444;
+          }
+  
+          p, ul {
+            font-size: 0.95rem;
+            padding: 0.75rem 1rem;
+            color: #555;
+          }
+  
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+  
+      .mt-3 {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+  
+        button {
+          font-weight: bold;
+          font-size: 0.95rem;
+          color: #1976d2;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+  // Responsive
+  @media (max-width: 576px) {
+    .container {
+      padding: 1rem;
+  
+      mat-card {
+        padding: 1.5rem;
+      }
+    }
+  }
+  
